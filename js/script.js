@@ -6,7 +6,7 @@ createApp({
             //STRINGHE
 
             //NUMERI
-            currentIndex : 0,
+            currentIndex: 0,
             //BOOLEANI
 
             //ARRAY
@@ -39,12 +39,23 @@ createApp({
     },
     // ************ FUNZIONI ************
     methods: {
-        next(){
-            if(currentIndex === this.)
+        next() {
+            if (this.currentIndex === (this.slides.length - 1)) {
+                this.currentIndex = 0;
+            }else {
+                this.currentIndex++;
+            }
+        },
+        prev() {
+            if (this.currentIndex === 0) {
+                this.currentIndex = this.slides.length - 1;
+            }else {
+                this.currentIndex--;
+            }
         }
     },
     mounted() {
-
+        let autoPlay;
     }
 }).mount('#app');
 
