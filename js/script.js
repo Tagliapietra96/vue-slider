@@ -52,6 +52,9 @@ createApp({
             }else {
                 this.currentIndex--;
             }
+        },
+        onThumbClick(index){
+            this.currentIndex = index;
         }
     },
     mounted() {
