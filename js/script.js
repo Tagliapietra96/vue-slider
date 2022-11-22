@@ -34,7 +34,7 @@ createApp({
                 }
             ],
             //OGGETTI
-
+            autoplay: setInterval(this.next, 1000)
         }
     },
     // ************ FUNZIONI ************
@@ -55,10 +55,18 @@ createApp({
         },
         onThumbClick(index){
             this.currentIndex = index;
+        },
+        mouseOn(){
+            clearInterval(this.autoplay);
+        },
+        mouseOff(){
+            this.autoplay = setInterval(this.next, 1000)
         }
+
     },
     mounted() {
-        let autoPlay = setInterval(this.next, 1000);
+       
+    
     }
 }).mount('#app');
 
