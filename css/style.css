@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: #c6c6c6;
+}
 
 .container {
     height: 100vh;
@@ -7,9 +19,9 @@
 }
 
 .item {
-    float: left;
-    width: 700px;
-    height: 300px;
+    /* float: left; */
+    min-width: 70%;
+    height: 70%;
     position: relative;
 }
 
@@ -28,14 +40,14 @@
 }
 
 .thumbs {
-    float: left;
-    height: 300px;
+    /* float: left; */
+    height: 70%;
     background: #000;
     position: relative;
 }
 
 .thumb {
-    height: calc((300px) / 5);
+    height: calc((100%) / 5);
     opacity: 0.5;
 }
 
