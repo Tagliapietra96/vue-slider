@@ -34,7 +34,7 @@ createApp({
                 }
             ],
             //TIMER
-            autoplay: setInterval(this.next, 3000)
+            autoplay: ''
         }
     },
     // ************ FUNZIONI ************
@@ -65,8 +65,7 @@ createApp({
 
     },
     mounted() {
-       
-    
+       this.autoplay = setInterval(this.next, 3000);
     }
 }).mount('#app');
 
